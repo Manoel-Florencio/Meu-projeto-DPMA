@@ -1,0 +1,244 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-image1 {
+  right: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  /* ajuste conforme o necessário */
+
+}
+
+.logo-image2 {
+  right: 200px;
+  height: 230px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+
+
+}
+
+body {
+  background-image: url('https://udv.org.br/thoroazo/2021/09/CAPA-LOGO2-1030x580.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+
+
+.menu {
+  position: fixed;
+  margin-left: 350px;
+  margin-top: 60px;
+}
+
+.links-acesso {
+
+  margin-right: 30px;
+  color: gold;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  cursor: pointer;
+   text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+
+}
+
+a:hover{
+  color: rgb(61, 24, 13);
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+a:active{
+  color: gold;
+   text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.button-entra {
+  background: rgb(88, 45, 9);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  width: 100px;
+  height: 35px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-weight: 700;
+  line-height: 3px;
+}
+
+button:hover {
+  background-color: gold;
+  color: black;
+  border: 3px solid black;
+}
+
+button:active{
+  opacity: .5;
+}
+
+main {
+  margin-left: 450px;
+  margin-top: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  margin-bottom: 210px;
+  margin-right: 30px;
+  background: rgba(27, 75, 27, 0.61);
+  border-radius: 10px;
+
+}
+
+h1 {
+  color: rgb(61, 24, 13);
+  text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.NLDN {
+  color: rgb(255, 217, 0);
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+p {
+  text-align: left;
+  color: white;
+  font-size: 15PX;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+.M-florencio {
+  color: rgb(255, 217, 0);
+  font-size: 20PX;
+  font-weight: bold;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+
+.slideshow {
+
+  position: static;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.slide {
+  border-radius: 20px;
+  margin-left: 35px;
+  margin-top: 200px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  opacity: 10;
+  animation: slideAnim 21s infinite;
+  border: 4px solid rgb(13, 102, 10);
+  /* <<< Aqui está a borda */
+  box-sizing: border-box;
+  /* Garante que a borda não estoura o tamanho da imagem */
+  box-shadow: 0 0 10px rgba(199, 169, 3, 0.5);
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.slide:nth-child(4) {
+  animation-delay: 9s;
+}
+
+.slide:nth-child(5) {
+  animation-delay: 12s;
+}
+
+.slide:nth-child(6) {
+  animation-delay: 15s;
+}
+
+.slide:nth-child(7) {
+  animation-delay: 18s;
+}
+
+
+
+@keyframes slideAnim {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('https://udv.org.br/thoroazo/2021/09/CAPA-LOGO2-1030x580.jpg'); /* ou a mesma imagem adaptada */
+    
+    background-size: cover;
+    background-position: center top;
+    
+  }
+}
